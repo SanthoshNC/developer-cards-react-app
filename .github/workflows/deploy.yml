@@ -1,0 +1,48 @@
+name: GH Pages Deployment
+on: push
+permissions:
+   contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Installing NPM packages
+        run: npm ci
+
+      - name: Building project
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider  # To handle any Node.js OpenSSL issues
+        run: npm run build
+
+      - name: Running tests (Skip if no tests are found)
+        run: npm test -- --passWithNoTests
+
+      - name: Uploading production-ready build files
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: production-files
+          path: ./build
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Downloading artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: production-files
+          path: ./build
+
+      - name: Deploying to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+
+     
