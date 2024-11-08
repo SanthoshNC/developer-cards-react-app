@@ -1,14 +1,9 @@
 [
   {
-    "name": "Alice Johnson",
-    "language": "JavaScript",
-    "funFact": "Can debug in her sleep",
-    "superpower": "API Ninja"
-  },
-  {
-    "name": "Alice Johnson",
-    "language": "JavaScript",
-    "funFact": "Can debug in her sleep",
-    "superpower": "API Ninja"
+    "name": "Mathiarasu R S",
+    "language": "MERN Stack Developer",
+    "funFact": "Masters of Ctrl+C, Ctrl+V but call it code reusability.",
+    "funFact1":"Always in dark mode — both IDE and life.",
+    "superpower": "Debug Ninja"
   }
 ]
