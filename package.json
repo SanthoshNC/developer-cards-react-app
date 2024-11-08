@@ -1,7 +1,7 @@
 {
   "name": "developer-cards",
   "version": "1.0.0",
-   "homepage": "https://tharunikal.github.io/22CB059-THARUNIKA-L/",
+   "homepage": "https://tharunikal.github.io/devolper-cards-react-app/",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
