@@ -1,6 +1,7 @@
 {
   "name": "developer-cards",
   "version": "1.0.0",
+  "homepage": "https://kaviyashree45.github.io/developer-cards-react-app/";
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
