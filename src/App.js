@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to the Developer Cards App</h1>
-      <p>22CB055</p>
+      <h2>22CB055</h2>
       <CardList />
     </div>
   );
