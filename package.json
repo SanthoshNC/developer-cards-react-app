@@ -1,8 +1,10 @@
 {
   "name": "developer-cards",
   "version": "1.0.0",
+  "homepage": "https://bharathi-025.github.io/developer-cards-react-app/",
   "private": true,
   "dependencies": {
+   
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3"
@@ -13,6 +15,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+   
   "browserslist": {
     "production": [
       ">0.2%",
