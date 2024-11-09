@@ -12,7 +12,7 @@ jobs:
       - name: install npm packages
         run: npm install
       - name: run npm
-        run: npm run build
+        run: npm start
       - name: test npm
         run: npm run test
       - name: deploy to github pages
