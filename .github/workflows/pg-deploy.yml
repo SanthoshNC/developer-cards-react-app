@@ -57,13 +57,14 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-      - name: Check if there are changes to commit
+      - name: Check if gh-pages branch exists
         run: |
-          git diff --exit-code || echo "There are changes to commit"
+          git fetch
+          git branch -a | grep 'remotes/origin/gh-pages' || git branch gh-pages
 
       - name: Commit changes to Deployment Pg
         run: |
           git add -A
           git status
           git commit -m "Deploying new build to GitHub Pages" || echo "No changes to commit"
-          git push origin gh-pages
+          git push origin gh-pages || echo "Failed to push to gh-pages branch"
