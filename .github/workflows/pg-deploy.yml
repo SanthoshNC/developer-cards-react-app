@@ -56,9 +56,14 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-      
+
+      - name: Check if there are changes to commit
+        run: |
+          git diff --exit-code || echo "There are changes to commit"
+
       - name: Commit changes to Deployment Pg
         run: |
           git add -A
-          git commit -m "Deploying new build to GitHub Pages"
+          git status
+          git commit -m "Deploying new build to GitHub Pages" || echo "No changes to commit"
           git push origin gh-pages
