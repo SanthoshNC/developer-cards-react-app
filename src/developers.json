@@ -10,5 +10,11 @@
     "language": "JavaScript",
     "funFact": "Can debug in her sleep",
     "superpower": "API Ninja"
+  },
+  {
+    "name": "Kishor",
+    "language": "Python",
+    "funFact": "Loves Attack on Titan",
+    "superpower": "Still discovering"
   }
 ]
