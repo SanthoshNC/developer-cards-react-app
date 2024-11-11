@@ -11,6 +11,7 @@ function CardList() {
           <h2>{developer.name}</h2>
           <p>{developer.language}</p>
 		  <p>{developer.funFact}</p>
+      <p>{developer.funFact1}</p>
 		  <p>{developer.superpower}</p>
         </div>
       ))}
