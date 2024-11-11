@@ -10,5 +10,11 @@
     "language": "JavaScript",
     "funFact": "Can debug in her sleep",
     "superpower": "API Ninja"
+  },
+  {
+    "name": "Aravind",
+    "language": "Python",
+    "funFact": "Loves solving complex algorithms",
+    "superpower": "Data Wizard"
   }
 ]
