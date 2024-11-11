@@ -1,14 +1,14 @@
 [
   {
-    "name": "Alice Johnson",
-    "language": "JavaScript",
-    "funFact": "Can debug in her sleep",
-    "superpower": "API Ninja"
+    "name": "Michael Smith",
+    "language": "Python",
+    "funFact": "Loves solving Rubik's cubes",
+    "superpower": "Data Science Guru"
   },
   {
-    "name": "Alice Johnson",
-    "language": "JavaScript",
-    "funFact": "Can debug in her sleep",
-    "superpower": "API Ninja"
+    "name": "David Brown",
+    "language": "C++",
+    "funFact": "Plays the guitar in a band",
+    "superpower": "Memory Management Expert"
   }
 ]
