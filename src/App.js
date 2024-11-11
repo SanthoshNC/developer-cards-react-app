@@ -4,9 +4,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to the Developer Cards App</h1>
-      <p>To add your details, please submit a PR with your information in the <code>developers.json</code> file.</p>
+    <div className="ReactApp">
+      <h1>Developer Cards</h1>
+      <p>To view the app, clone the repository and <code>run.json</code> file.</p>
       <CardList />
     </div>
   );
