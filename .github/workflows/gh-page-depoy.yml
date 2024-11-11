@@ -1,7 +1,8 @@
 name: GH Pages Deployment
 on: push
 permissions:
-   contents: write
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,17 +11,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Installing NPM packages
+      - name: Install NPM packages
         run: npm ci
 
-      - name: Building project
+      - name: Build project
         run: npm run build
 
-      - name: Running tests
-        run: npm run test
+      - name: Run tests
+        run: npm test
 
-      - name: Uploading production-ready build files
-        uses: actions/upload-artifact@v4.4.3
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v4
         with:
           name: production-files
           path: ./build
@@ -31,13 +32,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Downloading artifact
-        uses: actions/download-artifact@v4.1.8
+      - name: Download artifact
+        uses: actions/download-artifact@v4
         with:
           name: production-files
           path: ./build
 
-      - name: Deploying to gh-pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
